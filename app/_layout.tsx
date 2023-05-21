@@ -41,13 +41,14 @@ export const Layout = () => {
 
       <Stack screenOptions={{
         headerShown: false,
+        animation: "fade",
         contentStyle: {
           backgroundColor: "transparent"
         }
       }} >
         <Stack.Screen name='index' redirect={!!isUserLogged} />
-        <Stack.Screen name='new' />
         <Stack.Screen name='memories' />
+        <Stack.Screen name='new' />
 
       </Stack>
     </ImageBackground>
